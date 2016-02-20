@@ -8,6 +8,9 @@ namespace MonopolyTestClass
 {
     public class Street : Space
     {
+        public int Price { get; set; }
+        public int Rent { get; set; }
+
         public Street(String name)
         {
             Name = name;

@@ -8,6 +8,8 @@ namespace MonopolyTestClass
 {
     public class Utility : Space
     {
+        public int Price { get; set; }
+
         public Utility(String name)
         {
             Name = name;
