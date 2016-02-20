@@ -6,10 +6,20 @@ using System.Collections.Generic;
 public class MenuManager : MonoBehaviour {
 
     public List<Transform> MenuPanels;
+    public Game_OptionsManager Manager;
+    public Transform Error_Dialog;
 
-    public void LoadScene(string name)
+    public void LoadGameScene(string name)
     {
-        SceneManager.LoadScene(name);
+        if(Manager.VerifyPlayersRules())
+        {
+
+            SceneManager.LoadScene(name);
+        }
+        else
+        {
+            Error_Dialog.gameObject.SetActive(true);
+        }
     }
 
     public void ExitGame()

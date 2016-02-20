@@ -45,7 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CharacerSelection_Holder.cs" />
      <Compile Include="Assets\Game_OptionsManager.cs" />
      <Compile Include="Assets\MenuManager.cs" />
      <Compile Include="Assets\SelectedPlayer.cs" />

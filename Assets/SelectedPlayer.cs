@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-
-public class SelectedPlayer : MonoBehaviour {
+using UnityEngine.Serialization;
+using System;
+      
+[Serializable]
+public class SelectedPlayer {
 
         public Toggle Selected;
         public Slider PlayerKind;
