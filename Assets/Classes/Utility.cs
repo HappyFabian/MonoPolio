@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
+
+[Serializable]
 public class Utility : Space
 {
     public int Price { get; set; }

@@ -5,6 +5,7 @@ using System.Text;
 using UnityEngine;
 
 
+[Serializable]
 public class Chance : Space
 {
     public Chance()

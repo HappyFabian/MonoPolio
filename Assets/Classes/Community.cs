@@ -5,6 +5,7 @@ using System.Text;
 using UnityEngine;
 
 
+[Serializable]
 public class Community : Space
 {
     public Community()

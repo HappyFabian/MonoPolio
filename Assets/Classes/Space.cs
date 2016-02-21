@@ -4,9 +4,15 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-public abstract class Space
+[Serializable]
+public class Space
 {
+    public Transform spot;
+    [SerializeField]
     public String Name { get; set; }
-    abstract public void Action();
+    public virtual void Action() {
+        Debug.Log("WHAT");
+    }
+
 }
 

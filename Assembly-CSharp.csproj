@@ -45,8 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Classes\Board.cs" />
      <Compile Include="Assets\Classes\Chance.cs" />
      <Compile Include="Assets\Classes\Community.cs" />
+     <Compile Include="Assets\Classes\Player.cs" />
      <Compile Include="Assets\Classes\Railroad.cs" />
      <Compile Include="Assets\Classes\Simple.cs" />
      <Compile Include="Assets\Classes\Space.cs" />
@@ -54,6 +56,7 @@
      <Compile Include="Assets\Classes\Tax.cs" />
      <Compile Include="Assets\Classes\Utility.cs" />
      <Compile Include="Assets\Dice_Manager.cs" />
+     <Compile Include="Assets\Game_Manager.cs" />
      <Compile Include="Assets\Scripts\Game_OptionsManager.cs" />
      <Compile Include="Assets\Scripts\MenuManager.cs" />
      <Compile Include="Assets\Scripts\SelectedPlayer.cs" />
