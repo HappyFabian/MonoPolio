@@ -1,37 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class Player
+﻿namespace Assets.Classes
 {
-    private int Location { get; set; }
-    private int Money { get; set; }
-    private bool Imprisoned { get; set; }
-
-
-    void MoveLocation(int spaces)
+    public class Player
     {
-        this.Location += spaces;
-    }
+        private int Location { get; set; }
+        private int Money { get; set; }
+        private bool Imprisoned { get; set; }
 
-    void AddMoney(int amount)
-    {
-        this.Money += amount;
-    }
 
-    void SubMoney(int amount)
-    {
-        this.Money -= amount;
-    }
+        void MoveLocation(int spaces)
+        {
+            this.Location += spaces;
+        }
 
-    void FreeFromPrison()
-    {
-        this.Imprisoned = false;
-    }
+        void AddMoney(int amount)
+        {
+            this.Money += amount;
+        }
 
-    void Imprison()
-    {
-        this.Imprisoned = true;
+        void SubMoney(int amount)
+        {
+            this.Money -= amount;
+        }
+
+        void FreeFromPrison()
+        {
+            this.Imprisoned = false;
+        }
+
+        void Imprison()
+        {
+            this.Imprisoned = true;
+        }
     }
 }
