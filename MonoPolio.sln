@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{6FA8CC67-CDDA-223C-66E6-A1C569B6AD9F}") = "MonoPolio", "Assembly-CSharp.csproj", "{AA478641-41DA-609D-78F9-143532743296}"
+Project("{7AAECCA2-1FC1-9DC6-02F5-C21B067872A8}") = "Monopolio", "Assembly-CSharp.csproj", "{1BD16BDA-22CA-34BE-2523-9EF177897533}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AA478641-41DA-609D-78F9-143532743296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA478641-41DA-609D-78F9-143532743296}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA478641-41DA-609D-78F9-143532743296}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA478641-41DA-609D-78F9-143532743296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD16BDA-22CA-34BE-2523-9EF177897533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD16BDA-22CA-34BE-2523-9EF177897533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD16BDA-22CA-34BE-2523-9EF177897533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD16BDA-22CA-34BE-2523-9EF177897533}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+				GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
+
 EndGlobal
