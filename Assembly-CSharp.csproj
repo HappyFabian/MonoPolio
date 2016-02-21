@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Classes\Chance.cs" />
      <Compile Include="Assets\Classes\Community.cs" />
+     <Compile Include="Assets\Classes\Player.cs" />
      <Compile Include="Assets\Classes\Railroad.cs" />
      <Compile Include="Assets\Classes\Simple.cs" />
      <Compile Include="Assets\Classes\Space.cs" />
