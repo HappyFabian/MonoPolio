@@ -8,6 +8,7 @@ using UnityEngine;
 public class Space
 {
     public Transform spot;
+    public int Location;
     [SerializeField]
     public String Name { get; set; }
     public virtual void Action() {

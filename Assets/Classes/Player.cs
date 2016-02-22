@@ -2,39 +2,64 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
-namespace Assets.Classes
+[Serializable]
+public class Player : MonoBehaviour
 {
-    public class Player
+
+    [SerializeField]
+    public int Location { get; set; }
+
+    [SerializeField]
+    public int Money { get; set; }
+
+    [SerializeField]
+    public bool Imprisoned { get; set; }
+
+    [SerializeField]
+    public string Name { get; set; }
+
+    public SpriteRenderer PlayerIcon = new SpriteRenderer();
+
+    public void setPlayer(int InitialLocation, int InitialMoney, string Name, Sprite Prefab, Color colour)
     {
-        private int Location { get; set; }
-        private int Money { get; set; }
-        private bool Imprisoned { get; set; }
+        Location = InitialLocation;
+        Money = InitialMoney;
+        this.Name = Name;
+        PlayerIcon.sprite = Prefab;
+        PlayerIcon.color = colour;
+    }
 
-
-        void MoveLocation(int spaces)
+    public void UpdateLocation(int newLocation)
+    {
+        this.Location += newLocation;
+        if (this.Location >= 40)
         {
-            this.Location += spaces;
+            var offset = Location - 39;
+            this.Location = offset;
         }
+        Debug.Log(Location);
+    }
 
-        void AddMoney(int amount)
-        {
-            this.Money += amount;
-        }
+    public void AddMoney(int amount)
+    {
+        this.Money += amount;
+    }
 
-        void SubMoney(int amount)
-        {
-            this.Money -= amount;
-        }
+    public void SubMoney(int amount)
+    {
+        this.Money -= amount;
+    }
 
-        void FreeFromPrison()
-        {
-            this.Imprisoned = false;
-        }
+    public void FreeFromPrison()
+    {
+        this.Imprisoned = false;
+    }
 
-        void Imprison()
-        {
-            this.Imprisoned = true;
-        }
+    public void Imprison()
+    {
+        this.Imprisoned = true;
     }
 }
+

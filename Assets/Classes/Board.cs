@@ -19,7 +19,6 @@ public class Board : MonoBehaviour
             new Street("VERMONT AVENUE"), 
             new Street("CONNECTICUT AVENUE"), 
             new Simple("JAIL"),
-            new Simple("JAIL_VISITING"),  
             new Street("ST. CHARLES PLACE"), 
             new Utility("ELECTRIC COMPANY"), 
             new Street("STATES AVENUE"), 
