@@ -24,7 +24,7 @@ namespace Assets.Classes
 
         void SubMoney(int amount)
         {
-            this.Money -= amount;
+            this.Money -= amount;   
         }
 
         void FreeFromPrison()
